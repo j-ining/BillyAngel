@@ -6,6 +6,7 @@ header {
   background-color: #fff;
   font-size: 15px;
 }
+
 /* gnb */
 .gnb {
   width: 1200px;
@@ -30,6 +31,7 @@ header {
 .gnb > li:hover {
   color: #f0616e;
 }
+
 /* sub_menu */
 .sub_menu {
   display: none;
@@ -63,6 +65,7 @@ header {
 .sub_menu li:hover {
   color: #f0616e;
 }
+
 /* sidebar */
 .gnb .btn_side {
   width: 50px;

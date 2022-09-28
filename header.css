@@ -40,12 +40,15 @@ header {
 
 /* lnb */
 .lnb {
-  display: none;
+  overflow: hidden;
   position: absolute;
   left: 0;
   right: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  max-height: 0;
+  background-color: #fff;
+  border-bottom: #f6c9c9 1px solid;
+
   transition: all 0.5s;
 }
 .lnb > .wrap {

@@ -1,0 +1,53 @@
+footer {
+  width: 100%;
+}
+
+/* fnb */
+footer > .fnb_box {
+  width: 100%;
+  height: 50px;
+  background-color: #f6c9c9;
+}
+footer > .fnb_box > .wrap {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+footer .fnb {
+  width: fit-content;
+  margin: auto;
+}
+footer ul > li {
+  float: left;
+  margin: 0 15px;
+  color: #fff;
+  line-height: 50px;
+  transition: all 0.3s;
+}
+footer ul > li:hover {
+  color: #d48e8e;
+}
+footer .sns {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+footer .sns > li {
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+/* copy */
+footer > .copy {
+  width: fit-content;
+  margin: 20px auto 40px;
+}
+footer > .copy > p {
+  float: left;
+  margin-right: 50px;
+  font-size: 10px;
+  color: #838383;
+}
+footer > .copy > p:last-child {
+  margin: 0;
+}

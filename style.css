@@ -59,8 +59,12 @@
   margin: 0 20px;
 }
 #best_items > .item_list a > img {
-  box-shadow: 5px 5px 5px rgba(48, 48, 48, 0.3);
   margin-bottom: 20px;
+  box-shadow: 5px 5px 5px rgba(48, 48, 48, 0.3);
+  transition: all 0.3s;
+}
+#best_items > .item_list a > img:hover {
+  opacity: 0.8;
 }
 #best_items > .item_list h6 {
   font-family: 'Times New Roman', Times, serif;
@@ -194,6 +198,8 @@
   text-align: center;
   line-height: 50px;
 }
+
+/* goods */
 #sub_items > .goods {
   width: 100%;
   height: 640px;
@@ -203,7 +209,7 @@
 #sub_items > .goods > div {
   float: left;
 }
-#sub_items > .goods > .txt {
+#sub_items > .goods > .txt_goods {
   width: 220px;
   height: 150px;
   margin: 150px 0 40px 60px;
@@ -211,7 +217,7 @@
   background-size: auto;
   text-align: center;
 }
-#sub_items > .goods > .txt > p {
+#sub_items > .goods > .txt_goods > p {
   padding-top: 5px;
   color: #2f4858;
   line-height: 25px;
@@ -231,5 +237,36 @@
   margin-left: 10px;
 }
 #sub_items > .goods > .btn_more:hover {
+  opacity: 0.8;
+}
+
+/* cs */
+#cs {
+  width: 780px;
+  margin: 100px auto;
+}
+#cs > .txt_cs {
+  float: left;
+}
+#cs h3 {
+  font-family: 'NanumMyeongjo';
+  font-size: 40px;
+  font-weight: 500;
+}
+#cs .info {
+  margin: 30px 0 15px;
+}
+#cs .time {
+  color: #ababab;
+}
+#cs .time > b {
+  color: #303030;
+}
+#cs > .talk {
+  float: right;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+#cs > .talk:hover {
   opacity: 0.8;
 }

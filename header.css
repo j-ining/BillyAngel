@@ -28,12 +28,18 @@ header {
   height: 50px;
   margin: 0 120px;
 }
+.gnb .logo img {
+  transition: all 2s;
+}
+.gnb .logo:hover img{
+  transform: rotateX(-360deg)
+}
 .gnb > li:hover {
   color: #f0616e;
 }
 
-/* sub_menu */
-.sub_menu {
+/* lnb */
+.lnb {
   display: none;
   position: absolute;
   left: 0;
@@ -42,27 +48,27 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
   transition: all 0.5s;
 }
-.sub_menu > .wrap {
+.lnb > .wrap {
   width: 1200px;
   margin: auto;
   padding: 15px 50px;
 }
-.sub_menu ul {
+.lnb ul {
   float: left;
 }
-.sub_menu ul:first-child {
+.lnb ul:first-child {
   margin-right: 100px;
 }
-.sub_menu ul:nth-child(2) {
+.lnb ul:nth-child(2) {
   margin-right: 500px;
 }
-.sub_menu li {
+.lnb li {
   width: 100px;
   font-size: 13px;
   text-align: center;
   line-height: 30px;
 }
-.sub_menu li:hover {
+.lnb li:hover {
   color: #f0616e;
 }
 

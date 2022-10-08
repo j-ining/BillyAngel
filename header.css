@@ -8,25 +8,27 @@ header {
 }
 
 /* gnb */
-.gnb {
+.gnb_container {
   width: 1200px;
-  height: 50px;
-  margin: 10px auto;
+  height: 70px;
+  margin: auto;
+}
+.gnb {
+  width: fit-content;
+  margin: auto;
 }
 .gnb > li {
   float: left;
   width: 100px;
+  padding: 10px 0;
   text-align: center;
   line-height: 50px;
   transition: all 0.5s;
 }
-.gnb > li:first-child {
-  margin-left: 50px;
-}
 .gnb .logo {
   width: 260px;
   height: 50px;
-  margin: 0 120px;
+  margin: 0 100px;
 }
 .gnb .logo img {
   transition: all 2s;
@@ -34,9 +36,10 @@ header {
 .gnb .logo:hover img{
   transform: rotateX(-360deg)
 }
+/*
 .gnb > li:hover {
   color: #f0616e;
-}
+}*/
 
 /* lnb */
 .lnb {
@@ -48,13 +51,11 @@ header {
   max-height: 0;
   background-color: #fff;
   border-bottom: #f6c9c9 1px solid;
-
   transition: all 0.5s;
 }
 .lnb > .wrap {
-  width: 1200px;
-  margin: auto;
-  padding: 15px 50px;
+  width: fit-content;
+  margin: 0 auto 20px;
 }
 .lnb ul {
   float: left;
@@ -63,7 +64,7 @@ header {
   margin-right: 100px;
 }
 .lnb ul:nth-child(2) {
-  margin-right: 500px;
+  margin-right: 460px;
 }
 .lnb li {
   width: 100px;
@@ -72,66 +73,79 @@ header {
   line-height: 30px;
 }
 .lnb li:hover {
-  color: #f0616e;
+  font-weight: bold;
 }
 
 /* sidebar */
-.gnb .btn_side {
-  width: 50px;
+.snb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+}
+.snb > i {
+  font-size: 20px;
+  text-align: center;
+  line-height: 70px;
+  transition: all 0.5s;
   cursor: pointer;
 }
-.gnb aside {
-  display: none;
+.snb > i:hover {
+  color: #f0616e;
+}
+.snb > aside {
+  overflow: hidden;
   position: fixed;
   top: 0;
   bottom: 0;
-  z-index: 1;
   right: 0;
+  z-index: 999;
   width: 300px;
-  height: 100vh;
+  max-width: 0;
   background-color: #2f4858;
   color: #fff;
 }
-.gnb aside > .btn_close {
+.snb > aside > .btn_close {
   width: 100%;
-  height: 50px;
   padding-right: 20px;
   font-size: 20px;
   text-align: right;
+  line-height: 50px;
   transition: all 0.3s;
+  cursor: pointer;
 }
-.gnb aside > .side_menu {
+.snb > aside > .side_menu {
   margin: 80px 50px 100px 50px;
 }
-.gnb aside > .side_menu > li {
+.snb > aside > .side_menu > li {
   padding-left: 5px;
   font-size: 20px;
   text-align: left;
   line-height: 55px;
   transition: all 0.3s;
 }
-.gnb aside > .side_icon {
+.snb > aside > .side_menu > li:hover {
+  padding-left: 0px;
+}
+.snb > aside > .side_icon {
   margin: 15px;
 }
-.gnb aside > .side_icon > li {
+.snb > aside > .side_icon > li {
   float: left;
   width: 50%;
   padding: 0 10px;
-  line-height: 35px;
+  text-align: center;
 }
-.gnb aside > .side_icon * {
+.snb > aside > .side_icon * {
   transition: all 0.3s;
 }
-.gnb aside > .side_icon img {
-  margin-top: 10px;
+.snb > aside > .side_icon img {
+  margin: 10px 0;
 }
-.gnb aside > .side_icon > li:first-child {
+.snb > aside > .side_icon > li:first-child {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
-.gnb aside > .btn_close > i:hover,
-.gnb aside > .side_icon > li:hover > * {
-  opacity: 0.7;
-}
-.gnb aside > .side_menu > li:hover {
-  padding-left: 0px;
+.snb > aside > .btn_close > i:hover,
+.snb > aside > .side_icon > li:hover > * {
+  opacity: 0.8;
 }

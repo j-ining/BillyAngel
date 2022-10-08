@@ -43,6 +43,7 @@
   position: relative;
   left: 0;
   width: 300%;
+  transition: all 0.5s;
 }
 #slide_banner > .banner_img > li {
   float: left;

@@ -22,7 +22,7 @@ footer ul > li {
   margin: 0 15px;
   color: #fff;
   line-height: 50px;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 footer ul > li:hover {
   color: #d48e8e;

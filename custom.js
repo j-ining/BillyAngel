@@ -73,6 +73,3 @@ function index_count () {
   }
   slide_banner(banner_current_index);
 }
-
-
-
